@@ -23,8 +23,11 @@
   .ul::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:currentColor;transform-origin:right;transform:scaleX(1);transition:transform .4s cubic-bezier(.22,.61,.36,1)}
   .ul:hover::after{transform-origin:left;transform:scaleX(0)}
 
-  .sendmail{align-self:flex-start;font-size:15px}
-  .content{margin-top:auto;padding-top:72px}
+  .contact{margin-top:34px}
+  .contact .h{margin:0 0 16px;font-size:13px}
+  .rows{display:grid;grid-template-columns:96px auto;row-gap:9px;font-size:12px;color:#3a382f}
+  .rows .k{color:#8a877c}
+  .content{margin-top:auto}
   .divider{height:1px;background:#c9c4ba;width:58%;margin-bottom:26px}
   .name{margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:48px;line-height:1.02;letter-spacing:-.01em}
   .bio{margin-top:22px;max-width:520px;font-size:13px;line-height:1.72;color:#3a382f}
@@ -45,9 +48,15 @@
     .right{order:-1;background:#f4f2ee}
     .rightinner{position:relative;height:100dvh}
     .rightinner img{width:100%;height:100%;object-fit:cover}
-    .left{padding:44px 30px 56px}
+    .left{padding:44px 30px 56px;text-align:center}
     .content{padding-top:44px}
+    .divider{margin-left:auto;margin-right:auto}
     .name{font-size:40px}
+    .bio{text-align:center}
+    .bio p{margin-left:auto;margin-right:auto}
+    .contact{text-align:center}
+    .contact .h{display:block;margin-left:auto;margin-right:auto}
+    .rows{display:inline-grid;text-align:left}
   }
 </style>
 </head>
@@ -56,23 +65,23 @@
 
   <!-- LEFT -->
   <div class="left">
-    <a class="ul sendmail" href="mailto:hello@brijeshchinai.com">Send email</a>
-
     <div class="content">
       <div class="divider"></div>
       <h1 class="name">Brijesh Chinai</h1>
 
       <div class="bio">
-        <p>Brijesh Chinai's work spans business, education, healthcare, agriculture, heritage and conservation. Across these seemingly different fields is one common belief: strong societies are built by strong institutions, responsible leadership and a commitment to preserving what matters. As Founder and Chairperson of the BRIC Group of Companies, he approaches every initiative with a long-term perspective, believing that business should create value not only for the present, but for generations to come.</p>
-        <p>A sixth-generation member of a family with over 150 years of entrepreneurial history, Brijesh comes from a legacy rooted in enterprise, public service and institution building. The Chinai family played an active role in India's freedom movement and later contributed to nation building through business, public life and institutions including the Indian Merchants' Chamber (IMC) and FICCI. Through his marriage to Chamundeshwari Bhogilal, he is also connected to the legacy of the late Pranlal Bhogilal, one of India's most respected industrialists and collectors, whose lifelong commitment to heritage preservation continues through Dastan and Auto World.</p>
-        <p>Driven by a deep passion for conservation and the stewardship of historic places and collections, Brijesh is actively engaged in initiatives that preserve and celebrate India's rich cultural, architectural, and automotive heritage, including Auto World. His contributions extend across real estate, higher education, healthcare, agriculture, and philanthropy, reflecting a broader commitment to building and strengthening institutions of lasting significance.</p>
-        <p>He also serves on the board of the century-old Chinai Hospital in Ahmedabad, an institution founded by Sardar Vallabhbhai Patel. His association with the hospital reflects a deep sense of responsibility towards carrying forward a distinguished institutional legacy and supporting organisations that have served communities across generations.</p>
+        <p>Brijesh Chinai's interests span business, education, healthcare, agriculture, design, automobiles and India's cultural legacy. While these fields may appear diverse, they are united by a common belief that enduring societies are built through strong institutions, thoughtful leadership and a deep respect for craftsmanship, history and innovation. As a trained architect, Brijesh approaches every initiative with a long-term perspective, believing that meaningful enterprises should create lasting value for people, communities and future generations.</p>
+        <p>A sixth-generation member of a family with over 150 years of entrepreneurial history, Brijesh comes from a legacy rooted in enterprise, public service, and institution-building. The Chinai family played an active role in India's freedom movement and later contributed to nation-building through business, public life, and institutions including the Indian Merchants' Chamber (IMC) and FICCI. Together with his wife, Chamundeshwari Bhogilal, Brijesh also carries forward the vision of the late Pranlal Bhogilal &mdash; an Industrialist, philanthropist, and art collector, whose passion for vintage and classic automobiles and preservation laid the foundation for <a class="ul" href="https://dastanautoworld.com/" target="_blank" rel="noopener" style="font-weight:500">Dastan Autoworld</a> &mdash; the world-renowned Auto collection.</p>
+        <p>With a keen interest in conservation and the preservation of historic places and collections, Brijesh remains actively involved in initiatives that celebrate India's cultural, architectural, and automotive legacy. His work and areas of impact extend across real estate solutions, higher education, healthcare, agriculture and philanthropy. He also serves on the board of the century-old Chinai Hospital in Ahmedabad, an institution founded by Sardar Vallabhbhai Patel, reflecting his continued commitment to strengthening institutions that create enduring value for society.</p>
       </div>
 
-      <div class="social">
-        <a class="ul" href="https://www.instagram.com/reel/DYJpHshiluD/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">Instagram</a>
-        <a class="ul" href="https://www.linkedin.com/in/brijesh-chinai-8372232b8/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="ul" href="mailto:hello@brijeshchinai.com">Email</a>
+      <div class="contact">
+        <p class="ul h">Contact info</p>
+        <div class="rows">
+          <span class="k">Email</span><a class="ul" href="mailto:brijeshchinai@gmail.com" style="justify-self:start">brijeshchinai@gmail.com</a>
+          <span class="k">Instagram</span><a class="ul" href="https://www.instagram.com/brijeshchinai/" target="_blank" rel="noopener" style="justify-self:start">@brijeshchinai</a>
+        </div>
+      </div>
       </div>
     </div>
   </div>
@@ -80,8 +89,8 @@
   <!-- RIGHT -->
   <div class="right">
     <div class="rightinner">
-      <img src="brijesh.jpg" alt="Brijesh Chinai">
-      <a class="pill" href="mailto:hello@brijeshchinai.com">Enquire</a>
+      <img src="assets/brijesh.jpg" alt="Brijesh Chinai">
+      <a class="pill" href="mailto:brijeshchinai@gmail.com">Enquire</a>
     </div>
   </div>
 
